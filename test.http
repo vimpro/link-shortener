@@ -1,0 +1,28 @@
+POST http://127.0.0.1:8000/create HTTP/1.1
+content-type: application/json
+
+{
+    "ID": "mylink",
+    "Location": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "Password": "password"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/delete HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID": "mylink",
+    "Password": "password"
+}
+
+###
+
+GET http://127.0.0.1:8000/clicks/mylink HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/mylink HTTP/1.1
+Content-Type: application/json
